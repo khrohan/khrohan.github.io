@@ -183,79 +183,7 @@ body{
     
 }
 
-/*responsive menu*/
-@media (min-width: 772px) and (max-width: 979px) {
-    .mainList ul {
-        top: 37px;
-    }
 
-    .mainList li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 771px) {
-    .mainList {
-        display: none;
-    }
-
-    .responsive-menu {
-        display: block;
-    }
-
-    .MenuBar {
-        margin: 0;
-        background: #221F1F;
-    }
-    .mainList{
-        border:none;
-    }
-    .mainList li {
-        display: block;
-        border-bottom: 1px solid #007bb6;
-        margin: 0;
-    }
-
-    .mainList li a {
-        background: #221F1F;
-        color: #007bb6;
-    }
-
-    .mainList li a:hover,.mainList li:hover>a {
-        background: #007bb6;
-        color: #fff;
-    }
-
-    .mainList ul {
-        visibility: hidden;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        transform: initial;
-    }
-
-    .mainList li:hover>ul {
-        visibility: visible;
-        opacity: 1;
-        position: relative;
-        transform: initial;
-    }
-
-    .mainList ul ul {
-        left: 0;
-        transform: initial;
-    }
-    .mainList li>ul ul:hover {
-        transform: initial;
-    }
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 320px) {
-}
 /*menu ends*/
 .faderContent{
 	margin-top: 140px;
@@ -539,4 +467,98 @@ input[type=search]:focus {
 	padding: 5px 0px;
 	color: white;
 	text-align: center;
+}
+/*responsive menu*/
+@media (min-width: 772px) and (max-width: 979px) {
+    .mainList ul {
+        top: 37px;
+    }
+
+    .mainList li a {
+        font-size: 16px;
+    }
+   
+}
+
+@media (max-width: 771px) {
+    .mainList {
+        display: none;
+        margin-left: -40px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .MenuBar {
+        margin: 0;
+        background: #221F1F;
+    }
+    .mainList{
+        border:none;
+        
+    }
+    .mainList li {
+        display: block;
+        border-bottom: 1px solid #007bb6;
+        margin: 0;
+    }
+
+    .mainList li a {
+        background: #221F1F;
+        color: #007bb6;
+    }
+
+    .mainList li a:hover,.mainList li:hover>a {
+        background: #007bb6;
+        color: #fff;
+    }
+
+    .mainList ul {
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: initial;
+    }
+
+    .mainList li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        transform: initial;
+    }
+
+    .mainList ul ul {
+        left: 0;
+        transform: initial;
+    }
+    .mainList li>ul ul:hover {
+        transform: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    input[type=search]{
+        width: 80px;
+        font-size: 10px;
+        background-image: none;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    .icon li a{
+        width: 30px;
+        height: 30px;
+    }
+    .icon li a .fa{
+        font-size: 16px;
+        line-height: calc(30px - 8px);
+    }
+}
+
+@media (max-width: 320px) {
 }
