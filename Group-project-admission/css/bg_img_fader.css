@@ -1,0 +1,26 @@
+.fader{
+	height: 400px;
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: -99;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+/*header shrink css needs for jss*/
+.menu.shrink{
+	height: 126px;
+}
+.menu.shrink h2{
+	font-size:30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.menu.shrink .mainList li{
+	line-height: 16px;
+}
