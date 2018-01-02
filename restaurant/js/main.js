@@ -74,3 +74,16 @@ $('.rc-carousel').each(function() {
 
                  
 })(jQuery);
+
+$(document).ready(function(){
+    $(".nav-menu .bar").click(function(){
+        $(".nav-menu ul").slideToggle(1000);
+    });
+    $(window).resize(function(){
+		var screenWidth = $(window).width();
+		if(screenWidth > 768){
+
+		$(".nav-menu ul").removeAttr("style");
+		}
+	});
+});
