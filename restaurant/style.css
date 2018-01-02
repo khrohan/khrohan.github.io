@@ -43,6 +43,18 @@ body {
 .header{
     
 }
+.nav-menu .bar{
+    display: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #848577;
+    padding: 1em 1em;
+}
+.nav-menu .bar i{
+    float: right;
+}
 .nav-menu ul{
     display: flex;
     justify-content: space-between;
@@ -250,7 +262,7 @@ td:last-child{
   top: 10px;
   left: 20px;
   background-color: rgba(255, 255, 255, .8);
-  width: 300px;
+  max-width: 300px;
   padding: 20px;
 }
 .owl-img-slide .owl-slide-text h1{
@@ -408,7 +420,12 @@ td:last-child{
     background: #e13527;
 }
 @media(max-width: 1000px){
-    
+    .side-list{
+        margin-top: 30px;
+    }
+    .side-list .side-list-img img{
+        max-height: 300px;
+    }
 }
 @media(max-width: 900px){
     
@@ -420,19 +437,73 @@ td:last-child{
     }
 }
 @media(max-width: 600px){
+    .nav-menu ul li a .fa{
+        display: none;
+    }
+    .about-inner-page3-area .owl-controls{
+        bottom: -50px;
+    }
+    .about-inner-page3-area .about-us-3-area div.owl-dot span{
+        width: 15px;
+        height: 15px;
+    }
+    .owl-img-slide .owl-slide-text{
+        
+        left: 0;
+    }
+    .owl-img-slide .owl-slide-text h1{
+        font-size: 18px;
+    }
+    .owl-img-slide .owl-slide-text h3{
+        font-size: 15px;
+    }
+    .owl-img-slide .owl-slide-text p{
+        font-size: 8px;
+    }
     .link-nav{
         flex-direction: column;
     }
     .soup-news{
         flex-direction: column;
+        
     }
     .soup-news-box{
-        flex: 100%;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px 0px;
+    }
+    .soup-news-img{
+        flex-direction: column;
     }
     .soup-number{
-        flex: 100%;
+        flex: 1;
+    }
+    .soup-news-count{
+        justify-content: space-between;
+    }
+    .soup-add, .soup-love{
+        
+    }
+    .butn-box{
+        flex-direction: column;
+    }
+    .butn-box .btn:first-child{
+        margin-bottom: 10px;
     }
     .cake-news-box{
         flex-direction: column;
-    }	
+    }
+}
+@media(max-width: 400px){
+    .nav-menu{
+        background: #fff;
+        border-radius: 4px;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        display: none;
+    }
+    .nav-menu .bar{
+        display: block;
+    }
 }
