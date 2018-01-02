@@ -432,4 +432,7 @@ td:last-child{
     .soup-number{
         flex: 100%;
     }
+    .cake-news-box{
+        flex-direction: column;
+    }	
 }
